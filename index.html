@@ -1,0 +1,1333 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>白袜女足 - 青春影像社区,把绿茵故事拍给你看</title>
+<meta name="description" content="白袜女足官方网站，专注女子足球青年训练、校园联赛与球员成长的原创影像社区，以专业记录与真实故事构筑值得信赖的内容生态。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231a7f5a'/%3E%3Ccircle cx='32' cy='32' r='16' fill='none' stroke='%23f4fbf7' stroke-width='3'/%3E%3Cpath d='M32 18 L32 32 L43 38' stroke='%23f4fbf7' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --bws-green:#1a7f5a;
+    --bws-green-deep:#0f5a3f;
+    --bws-mint:#e6f4ec;
+    --bws-earth:#8a6f4a;
+    --bws-sand:#f6f3ea;
+    --bws-ink:#1d2a24;
+    --bws-gray:#5f6f68;
+    --bws-line:#d6e4dc;
+    --bws-white:#ffffff;
+    --bws-radius:16px;
+    --bws-shadow:0 10px 30px rgba(15,90,63,.10);
+    --bws-header-h:112px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,sans-serif;
+    color:var(--bws-ink);
+    background:var(--bws-sand);
+    line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  ul{list-style:none}
+  button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+  section{scroll-margin-top:calc(var(--bws-header-h) + 16px)}
+  .bws-wrap{width:min(1180px,92vw);margin:0 auto}
+
+  /* ============ 吸顶区：公告 + 页头 ============ */
+  .bws-sticky{position:sticky;top:0;z-index:90;box-shadow:0 4px 18px rgba(15,90,63,.08)}
+  .bws-notice{background:var(--bws-green-deep);color:#eaf7f0;font-size:13.5px;letter-spacing:.2px}
+  .bws-notice-inner{width:min(1180px,92vw);margin:0 auto;display:flex;align-items:center;gap:12px;padding:9px 0;overflow:hidden}
+  .bws-notice-badge{flex:none;background:#f4d06f;color:#4a3510;font-weight:700;font-size:12px;padding:2px 9px;border-radius:999px}
+  .bws-notice-track{flex:1;display:flex;gap:36px;white-space:nowrap;overflow:hidden}
+  .bws-notice-track span{opacity:.94}
+  .bws-notice-track i{font-style:normal;color:#9fdcbb;margin-right:6px}
+  .bws-header{background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--bws-line)}
+  .bws-header-inner{width:min(1180px,92vw);margin:0 auto;display:flex;align-items:center;gap:24px;padding:14px 0}
+  .bws-logo{display:flex;align-items:center;gap:10px;flex:none}
+  .bws-logo-mark{width:42px;height:42px;border-radius:12px;background:linear-gradient(140deg,var(--bws-green),#2fae7c);display:grid;place-items:center;color:#fff;font-weight:800;font-size:17px;letter-spacing:.5px}
+  .bws-logo-txt b{display:block;font-size:17px;letter-spacing:1px;line-height:1.25}
+  .bws-logo-txt small{display:block;font-size:11px;color:var(--bws-gray);letter-spacing:2.4px;text-transform:uppercase}
+  .bws-nav{display:flex;gap:4px;margin-left:8px}
+  .bws-nav a{font-size:14.5px;padding:8px 12px;border-radius:10px;color:#33443b;transition:.2s}
+  .bws-nav a:hover{background:var(--bws-mint);color:var(--bws-green-deep)}
+  .bws-search{margin-left:auto;display:flex;align-items:center;gap:8px;background:var(--bws-mint);border:1px solid var(--bws-line);border-radius:12px;padding:6px 10px;min-width:220px}
+  .bws-search input{border:none;background:transparent;outline:none;font-size:14px;width:100%;color:var(--bws-ink)}
+  .bws-search button{font-size:13px;color:#fff;background:var(--bws-green);padding:5px 12px;border-radius:8px;flex:none}
+  .bws-burger{display:none;width:40px;height:40px;border-radius:10px;background:var(--bws-mint);align-items:center;justify-content:center;font-size:19px}
+  .bws-search-feedback{display:none;position:absolute;top:100%;left:0;right:0;background:#fff;border:1px solid var(--bws-line);border-radius:12px;margin-top:6px;padding:10px 14px;font-size:13px;color:var(--bws-gray);box-shadow:var(--bws-shadow)}
+  .bws-search{position:relative}
+
+  /* ============ 首屏 ============ */
+  .bws-hero{position:relative;background:
+      radial-gradient(circle at 88% 12%,rgba(47,174,124,.18),transparent 42%),
+      linear-gradient(160deg,#0f5a3f 0%,#14795a 46%,#1d8f68 100%);
+    color:#f2fbf6;overflow:hidden}
+  .bws-hero::after{content:"";position:absolute;right:-120px;bottom:-180px;width:520px;height:520px;border-radius:50%;border:60px solid rgba(255,255,255,.05)}
+  .bws-hero-inner{width:min(1180px,92vw);margin:0 auto;padding:60px 0 66px;display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center;position:relative;z-index:2}
+  .bws-hero-tag{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;letter-spacing:2px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.28);padding:5px 14px;border-radius:999px;margin-bottom:22px}
+  .bws-hero h1{font-size:clamp(38px,5.2vw,60px);line-height:1.12;letter-spacing:2px;margin-bottom:16px}
+  .bws-hero h1 em{font-style:normal;color:#f4d06f}
+  .bws-hero-lead{font-size:16.5px;color:#d8f1e4;max-width:30em;margin-bottom:22px}
+  .bws-hero-btns{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:30px}
+  .bws-btn{display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border-radius:12px;font-size:14.5px;font-weight:600;transition:.22s;border:1px solid transparent}
+  .bws-btn-primary{background:#f4d06f;color:#3d2e0d}
+  .bws-btn-primary:hover{background:#ffe08c;transform:translateY(-2px)}
+  .bws-btn-ghost{background:rgba(255,255,255,.08);color:#eefaf3;border-color:rgba(255,255,255,.35)}
+  .bws-btn-ghost:hover{background:rgba(255,255,255,.18)}
+  .bws-hero-stats{display:flex;gap:34px;flex-wrap:wrap}
+  .bws-hero-stats b{display:block;font-size:27px;letter-spacing:1px;color:#fff;line-height:1.2}
+  .bws-hero-stats span{font-size:12.5px;color:#a9d8c2;letter-spacing:.6px}
+  .bws-hero-visual{position:relative}
+  .bws-hero-cover{border-radius:22px;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.34);position:relative}
+  .bws-hero-cover svg{display:block;width:100%;height:auto}
+  .bws-hero-play{position:absolute;inset:0;display:grid;place-items:center;pointer-events:none}
+  .bws-hero-play span{width:64px;height:64px;border-radius:50%;background:rgba(255,255,255,.9);display:grid;place-items:center;color:var(--bws-green-deep);font-size:22px;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+  .bws-hero-chip{position:absolute;left:-16px;bottom:26px;background:#fff;color:var(--bws-ink);border-radius:14px;padding:10px 16px;font-size:13px;box-shadow:var(--bws-shadow)}
+  .bws-hero-chip b{color:var(--bws-green-deep)}
+
+  /* ============ 关键词解析 ============ */
+  .bws-about{background:var(--bws-white);padding:72px 0 68px}
+  .bws-sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:34px;flex-wrap:wrap}
+  .bws-sec-eyebrow{font-size:12.5px;letter-spacing:3px;color:var(--bws-green);font-weight:700;text-transform:uppercase;margin-bottom:8px}
+  .bws-sec-head h2{font-size:clamp(24px,3vw,32px);letter-spacing:1px;line-height:1.3}
+  .bws-sec-head p{font-size:14px;color:var(--bws-gray);max-width:32em}
+  .bws-about-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+  .bws-about-copy p{font-size:15px;color:#3c4c44;margin-bottom:16px;text-align:justify}
+  .bws-about-copy p b{color:var(--bws-green-deep)}
+  .bws-about-cards{display:grid;gap:14px}
+  .bws-about-card{background:var(--bws-mint);border-left:4px solid var(--bws-green);border-radius:12px;padding:16px 18px}
+  .bws-about-card h3{font-size:15.5px;margin-bottom:5px;color:var(--bws-green-deep)}
+  .bws-about-card p{font-size:13.5px;color:#4a5c53}
+  .bws-about-quote{background:linear-gradient(135deg,#f6f3ea,#eaf6f0);border-radius:16px;padding:22px;font-size:14.5px;color:#3c4c44;border:1px dashed #bcd9c9}
+
+  /* ============ 焦点视频 ============ */
+  .bws-focus{padding:70px 0;background:var(--bws-sand)}
+  .bws-focus-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:22px}
+  .bws-card{background:#fff;border-radius:var(--bws-radius);overflow:hidden;border:1px solid var(--bws-line);transition:transform .25s,box-shadow .25s;display:flex;flex-direction:column}
+  .bws-card:hover{transform:translateY(-4px);box-shadow:var(--bws-shadow)}
+  .bws-card-cover{position:relative;aspect-ratio:16/9;overflow:hidden;background:#cfe5da}
+  .bws-card-cover svg{width:100%;height:100%;display:block}
+  .bws-cover-tag{position:absolute;left:12px;top:12px;background:rgba(15,90,63,.88);color:#eafaf2;font-size:11.5px;padding:3px 10px;border-radius:999px;letter-spacing:.5px}
+  .bws-cover-time{position:absolute;right:12px;bottom:10px;background:rgba(0,0,0,.6);color:#fff;font-size:11.5px;padding:2px 8px;border-radius:6px}
+  .bws-card-body{padding:16px 18px 18px;display:flex;flex-direction:column;gap:9px;flex:1}
+  .bws-card-body h3{font-size:16.5px;line-height:1.45;letter-spacing:.3px}
+  .bws-card-body .bws-desc{font-size:13px;color:var(--bws-gray);flex:1}
+  .bws-meta{display:flex;align-items:center;gap:10px;font-size:12.5px;color:#6d7f76}
+  .bws-meta .bws-avatar{width:24px;height:24px;border-radius:50%;display:grid;place-items:center;font-size:11px;font-weight:700;color:#fff;flex:none}
+  .bws-tags{display:flex;flex-wrap:wrap;gap:6px}
+  .bws-tag{font-size:11.5px;color:var(--bws-green-deep);background:var(--bws-mint);border-radius:999px;padding:2px 9px}
+  .bws-actions{display:flex;align-items:center;gap:14px;padding-top:10px;border-top:1px dashed var(--bws-line);font-size:13px;color:#5f6f68}
+  .bws-act{display:inline-flex;align-items:center;gap:5px;transition:.18s;padding:3px 6px;border-radius:8px}
+  .bws-act:hover{background:var(--bws-mint);color:var(--bws-green-deep)}
+  .bws-act.is-on{color:#c8462f}
+  .bws-act.is-fav{color:#d29a1b}
+  .bws-focus-side{display:grid;gap:14px}
+  .bws-mini{display:grid;grid-template-columns:128px 1fr;gap:12px;background:#fff;border:1px solid var(--bws-line);border-radius:14px;overflow:hidden;transition:.22s}
+  .bws-mini:hover{box-shadow:var(--bws-shadow);transform:translateX(3px)}
+  .bws-mini-cover{position:relative;aspect-ratio:16/10;background:#dbece3}
+  .bws-mini-cover svg{width:100%;height:100%}
+  .bws-mini-body{padding:10px 12px 10px 0;display:flex;flex-direction:column;gap:6px;justify-content:center}
+  .bws-mini-body h4{font-size:13.8px;line-height:1.4}
+  .bws-mini-body small{font-size:12px;color:var(--bws-gray)}
+
+  /* ============ 专题 ============ */
+  .bws-topics{padding:70px 0;background:#fff}
+  .bws-topic-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .bws-topic{border:1px solid var(--bws-line);border-radius:16px;overflow:hidden;background:var(--bws-sand);display:flex;flex-direction:column;transition:.24s}
+  .bws-topic:hover{transform:translateY(-4px);box-shadow:var(--bws-shadow)}
+  .bws-topic-cover{aspect-ratio:16/9;background:#d9ece2}
+  .bws-topic-cover svg{width:100%;height:100%}
+  .bws-topic-body{padding:16px 18px 18px}
+  .bws-topic-body h3{font-size:16px;margin-bottom:6px}
+  .bws-topic-body p{font-size:13px;color:var(--bws-gray);margin-bottom:12px}
+  .bws-status{display:inline-flex;align-items:center;gap:6px;font-size:12px;color:var(--bws-green-deep);background:var(--bws-mint);padding:3px 10px;border-radius:999px}
+  .bws-status::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--bws-green)}
+
+  /* ============ 热门视频流 ============ */
+  .bws-stream{padding:70px 0;background:var(--bws-sand)}
+  .bws-filter{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px}
+  .bws-chip{font-size:13px;padding:6px 15px;border-radius:999px;border:1px solid var(--bws-line);background:#fff;color:#42534a;transition:.2s}
+  .bws-chip:hover{border-color:var(--bws-green)}
+  .bws-chip.is-active{background:var(--bws-green);color:#fff;border-color:var(--bws-green)}
+  .bws-stream-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .bws-empty{display:none;text-align:center;padding:40px;color:var(--bws-gray);font-size:14px}
+
+  /* ============ 创作者 ============ */
+  .bws-makers{padding:70px 0;background:linear-gradient(180deg,#fff,#eef7f1)}
+  .bws-maker-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+  .bws-maker{background:#fff;border:1px solid var(--bws-line);border-radius:16px;padding:22px 18px;text-align:center;transition:.24s}
+  .bws-maker:hover{transform:translateY(-4px);box-shadow:var(--bws-shadow)}
+  .bws-maker-ava{width:64px;height:64px;border-radius:50%;margin:0 auto 12px;display:grid;place-items:center;font-size:22px;font-weight:800;color:#fff;letter-spacing:1px}
+  .bws-maker h3{font-size:15.5px;margin-bottom:3px}
+  .bws-maker .bws-field{font-size:12px;color:var(--bws-green);margin-bottom:10px}
+  .bws-maker p{font-size:12.8px;color:var(--bws-gray);min-height:56px}
+  .bws-maker .bws-maker-data{display:flex;justify-content:center;gap:16px;font-size:12px;color:#6d7f76;margin:10px 0 12px}
+  .bws-maker .bws-maker-data b{display:block;color:var(--bws-ink);font-size:14px}
+  .bws-maker button{font-size:12.5px;color:var(--bws-green-deep);border:1px solid var(--bws-line);padding:5px 16px;border-radius:999px;transition:.2s}
+  .bws-maker button:hover{background:var(--bws-mint)}
+
+  /* ============ 故事 ============ */
+  .bws-stories{padding:70px 0;background:#fff}
+  .bws-story-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .bws-story{background:var(--bws-sand);border-radius:16px;padding:24px 22px;border-top:4px solid var(--bws-green);display:flex;flex-direction:column;gap:10px}
+  .bws-story h3{font-size:16.5px;line-height:1.5}
+  .bws-story p{font-size:13.5px;color:#4a5c53;text-align:justify}
+  .bws-story small{font-size:12px;color:var(--bws-gray);margin-top:auto}
+
+  /* ============ 榜单 + 灵感 ============ */
+  .bws-extra{padding:70px 0;background:var(--bws-sand)}
+  .bws-extra-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  .bws-panel{background:#fff;border:1px solid var(--bws-line);border-radius:18px;padding:24px}
+  .bws-panel h2{font-size:19px;margin-bottom:6px}
+  .bws-panel .bws-panel-sub{font-size:13px;color:var(--bws-gray);margin-bottom:18px}
+  .bws-rank{display:flex;flex-direction:column;gap:2px}
+  .bws-rank li{display:flex;align-items:center;gap:12px;padding:11px 8px;border-radius:10px;font-size:14px;transition:.2s}
+  .bws-rank li:hover{background:var(--bws-mint)}
+  .bws-rank .bws-no{width:22px;font-weight:800;color:#a9bcb1;font-size:13px;text-align:center}
+  .bws-rank li:nth-child(1) .bws-no{color:#d29a1b}
+  .bws-rank li:nth-child(2) .bws-no{color:#8d9aa0}
+  .bws-rank li:nth-child(3) .bws-no{color:#b3794a}
+  .bws-rank .bws-rank-t{flex:1}
+  .bws-rank .bws-rank-n{font-size:12px;color:var(--bws-gray)}
+  .bws-idea{display:grid;gap:12px}
+  .bws-idea-item{background:var(--bws-mint);border-radius:12px;padding:14px 16px}
+  .bws-idea-item h3{font-size:14.5px;margin-bottom:4px;color:var(--bws-green-deep)}
+  .bws-idea-item p{font-size:13px;color:#4a5c53}
+  .bws-idea-item .bws-idea-tag{font-size:11.5px;color:#6d7f76;margin-top:6px;display:inline-block;background:#fff;border-radius:999px;padding:2px 9px}
+
+  /* ============ FAQ + 联系 ============ */
+  .bws-faq{padding:70px 0;background:#fff}
+  .bws-faq-wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:40px}
+  .bws-faq details{border:1px solid var(--bws-line);border-radius:12px;margin-bottom:10px;background:var(--bws-sand);overflow:hidden}
+  .bws-faq summary{cursor:pointer;padding:14px 18px;font-size:14.5px;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:10px}
+  .bws-faq summary::-webkit-details-marker{display:none}
+  .bws-faq summary::after{content:"+";color:var(--bws-green);font-weight:700}
+  .bws-faq details[open] summary::after{content:"–"}
+  .bws-faq details p{padding:0 18px 16px;font-size:13.5px;color:#4a5c53}
+  .bws-contact{background:linear-gradient(150deg,var(--bws-green-deep),#1d8f68);color:#eafaf2;border-radius:18px;padding:28px 26px}
+  .bws-contact h2{font-size:19px;color:#fff;margin-bottom:10px}
+  .bws-contact p{font-size:13.5px;color:#c5e9d8;margin-bottom:18px}
+  .bws-contact dl{display:grid;gap:10px;font-size:13.5px}
+  .bws-contact dt{color:#9fdcbb;font-size:12px;letter-spacing:1px}
+  .bws-contact dd{margin-bottom:4px}
+  .bws-contact-btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+  .bws-contact-btns .bws-btn{font-size:13px;padding:9px 18px}
+
+  /* ============ 页脚 ============ */
+  .bws-footer{background:#12241c;color:#a7c2b5;padding:52px 0 26px;font-size:13px}
+  .bws-footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px;margin-bottom:36px}
+  .bws-footer h4{color:#eafaf2;font-size:14px;margin-bottom:12px;letter-spacing:.5px}
+  .bws-footer li{margin-bottom:8px}
+  .bws-footer a:hover{color:#fff}
+  .bws-footer-brand b{color:#fff;font-size:16px;display:block;margin-bottom:10px;letter-spacing:1px}
+  .bws-footer-brand p{font-size:12.8px;line-height:1.8}
+  .bws-footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:18px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:12.2px;color:#7d9a8b}
+
+  /* ============ 弹窗 & Toast & 回顶 ============ */
+  .bws-modal-mask{position:fixed;inset:0;background:rgba(10,30,22,.55);z-index:200;display:none;align-items:center;justify-content:center;padding:20px}
+  .bws-modal-mask.is-open{display:flex}
+  .bws-modal{background:#fff;border-radius:18px;max-width:460px;width:100%;padding:26px;position:relative;max-height:86vh;overflow:auto}
+  .bws-modal h3{font-size:18px;margin-bottom:12px}
+  .bws-modal p{font-size:14px;color:#4a5c53;margin-bottom:14px}
+  .bws-modal .bws-modal-close{position:absolute;right:14px;top:12px;font-size:20px;color:#8fa39a}
+  .bws-modal label{display:block;font-size:13px;color:var(--bws-gray);margin:10px 0 4px}
+  .bws-modal input,.bws-modal textarea{width:100%;border:1px solid var(--bws-line);border-radius:10px;padding:9px 12px;font-size:14px;font-family:inherit;outline:none}
+  .bws-modal textarea{min-height:86px;resize:vertical}
+  .bws-toast{position:fixed;left:50%;bottom:38px;transform:translate(-50%,20px);background:#12241c;color:#eafaf2;padding:11px 22px;border-radius:999px;font-size:13.5px;opacity:0;pointer-events:none;transition:.28s;z-index:300}
+  .bws-toast.is-show{opacity:1;transform:translate(-50%,0)}
+  .bws-top{position:fixed;right:22px;bottom:26px;width:44px;height:44px;border-radius:50%;background:var(--bws-green);color:#fff;display:grid;place-items:center;font-size:18px;box-shadow:var(--bws-shadow);opacity:0;pointer-events:none;transition:.3s;z-index:120}
+  .bws-top.is-show{opacity:1;pointer-events:auto}
+
+  /* ============ 响应式 ============ */
+  @media(max-width:980px){
+    .bws-hero-inner{grid-template-columns:1fr;gap:34px;padding:44px 0 52px}
+    .bws-about-grid,.bws-focus-grid,.bws-extra-grid,.bws-faq-wrap{grid-template-columns:1fr}
+    .bws-topic-grid,.bws-stream-grid,.bws-story-grid{grid-template-columns:repeat(2,1fr)}
+    .bws-maker-grid{grid-template-columns:repeat(2,1fr)}
+    .bws-footer-grid{grid-template-columns:1fr 1fr}
+    .bws-nav{display:none;position:absolute;left:0;right:0;top:calc(100% + 1px);background:#fff;flex-direction:column;padding:10px 20px 18px;border-bottom:1px solid var(--bws-line);box-shadow:var(--bws-shadow)}
+    .bws-nav.is-open{display:flex}
+    .bws-burger{display:flex}
+    .bws-search{min-width:0;flex:1}
+  }
+  @media(max-width:640px){
+    :root{--bws-header-h:104px}
+    .bws-topic-grid,.bws-stream-grid,.bws-story-grid,.bws-maker-grid{grid-template-columns:1fr}
+    .bws-hero-stats{gap:22px}
+    .bws-notice-track{gap:24px}
+    .bws-footer-grid{grid-template-columns:1fr}
+    .bws-mini{grid-template-columns:110px 1fr}
+  }
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="bws-sticky">
+  <div class="bws-notice">
+    <div class="bws-notice-inner">
+      <span class="bws-notice-badge">官方发布</span>
+      <div class="bws-notice-track">
+        <span><i>新</i>白袜女足官方发布 2026 冬季校园联赛专题，首批 8 支青训球队影像档案上线</span>
+        <span><i>动态</i>「她脚下的城市」第二季开拍，前往成都、西安、青岛三地记录业余女足日常</span>
+        <span><i>报名</i>创作者扶持计划第三期开放报名，面向校园足球记录者提供拍摄与剪辑支持</span>
+      </div>
+    </div>
+  </div>
+  <header class="bws-header">
+    <div class="bws-header-inner">
+      <a class="bws-logo" href="#bws-home" aria-label="白袜女足官网首页">
+        <span class="bws-logo-mark">白</span>
+        <span class="bws-logo-txt"><b>白袜女足</b><small>Baisocks FC</small></span>
+      </a>
+      <nav class="bws-nav" id="bws-nav">
+        <a href="#bws-home">首页</a>
+        <a href="#bws-focus">焦点影像</a>
+        <a href="#bws-topics">专题企划</a>
+        <a href="#bws-stream">内容社区</a>
+        <a href="#bws-makers">创作者</a>
+        <a href="#bws-stories">品牌故事</a>
+        <a href="#bws-faq">帮助</a>
+      </nav>
+      <div class="bws-search">
+        <input id="bws-search-input" type="search" placeholder="搜索球员、球队或专题" aria-label="站内搜索">
+        <button id="bws-search-btn" type="button">搜索</button>
+        <div class="bws-search-feedback" id="bws-search-feedback"></div>
+      </div>
+      <button class="bws-burger" id="bws-burger" type="button" aria-label="展开导航">☰</button>
+    </div>
+  </header>
+</div>
+
+<!-- ============ 首屏 ============ -->
+<section class="bws-hero" id="bws-home">
+  <div class="bws-hero-inner">
+    <div class="bws-hero-content">
+      <span class="bws-hero-tag">官方网站 · 原创影像社区</span>
+      <h1>白袜女足<em>，把每一次奔跑留成影像</em></h1>
+      <p class="bws-hero-lead">白袜女足是一个以女子足球为核心的原创视频品牌。我们走进校园球场、社区草坪与城市灯光球场，记录训练、比赛与更衣室之外的真实成长，让每一双白袜背后都有可被看见的故事。</p>
+      <div class="bws-hero-btns">
+        <a class="bws-btn bws-btn-primary" href="#bws-focus">进入焦点影像</a>
+        <a class="bws-btn bws-btn-ghost" href="#bws-makers">认识创作者</a>
+        <button class="bws-btn bws-btn-ghost" type="button" data-bws-submit>投稿我的球场故事</button>
+      </div>
+      <div class="bws-hero-stats">
+        <div><b data-bws-count="1286">0</b><span>部原创影像</span></div>
+        <div><b data-bws-count="342">0</b><span>位签约创作者</span></div>
+        <div><b data-bws-count="97">0</b><span>个合作球队</span></div>
+      </div>
+    </div>
+    <div class="bws-hero-visual">
+      <div class="bws-hero-cover">
+        <svg viewBox="0 0 640 360" role="img" aria-label="白袜女足球员在绿色球场边线启动冲刺的插画封面">
+          <defs>
+            <linearGradient id="bwsHeroSky" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#0d4a36"/>
+              <stop offset="1" stop-color="#1f8f68"/>
+            </linearGradient>
+            <linearGradient id="bwsHeroGrass" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#2aa474"/>
+              <stop offset="1" stop-color="#136348"/>
+            </linearGradient>
+          </defs>
+          <rect width="640" height="360" fill="url(#bwsHeroSky)"/>
+          <circle cx="512" cy="70" r="46" fill="#f4d06f" opacity=".85"/>
+          <rect y="238" width="640" height="122" fill="url(#bwsHeroGrass)"/>
+          <g stroke="#e9faf1" stroke-width="2" opacity=".45" fill="none">
+            <path d="M0 268 H640"/>
+            <circle cx="320" cy="320" r="62"/>
+            <path d="M320 238 V360"/>
+          </g>
+          <g>
+            <circle cx="238" cy="118" r="26" fill="#f6e7cf"/>
+            <path d="M212 112 q26 -32 52 0 q-6 -30 -26 -30 q-20 0 -26 30z" fill="#2b1d13"/>
+            <path d="M214 146 q24 16 48 0 l10 46 q-34 18 -68 0z" fill="#ffffff"/>
+            <path d="M222 190 l-6 52 M254 190 l6 52" stroke="#eef7f1" stroke-width="12" stroke-linecap="round"/>
+            <path d="M214 242 h-20 M262 242 h20" stroke="#f4d06f" stroke-width="10" stroke-linecap="round"/>
+            <path d="M210 152 l-36 34 M266 152 l38 26" stroke="#f6e7cf" stroke-width="9" stroke-linecap="round"/>
+            <circle cx="262" cy="216" r="9" fill="#ffffff" stroke="#2b1d13" stroke-width="2"/>
+          </g>
+          <g opacity=".85">
+            <circle cx="424" cy="150" r="20" fill="#f6e7cf"/>
+            <path d="M404 146 q20 -26 40 0 q-4 -24 -20 -24 q-16 0 -20 24z" fill="#3a2418"/>
+            <path d="M406 168 q18 12 36 0 l8 34 q-26 14 -52 0z" fill="#c8462f"/>
+            <path d="M412 200 l-4 40 M436 200 l4 40" stroke="#eef7f1" stroke-width="9" stroke-linecap="round"/>
+          </g>
+          <path d="M0 300 q120 -34 240 0 t240 0 t160 0 v60 H0z" fill="#0f5a3f" opacity=".5"/>
+        </svg>
+        <div class="bws-hero-play"><span>▶</span></div>
+      </div>
+      <div class="bws-hero-chip">本周热播 · <b>《白袜之下》第 12 期</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 关键词解析 ============ -->
+<section class="bws-about" id="bws-about">
+  <div class="bws-wrap">
+    <div class="bws-sec-head">
+      <div>
+        <div class="bws-sec-eyebrow">Official Brand Notes</div>
+        <h2>关于白袜女足：一个由球场与镜头共同养成的视频品牌</h2>
+      </div>
+      <p>从校园联赛到社区草坪，我们以企业级的制作标准与社区化的表达方式，持续运营一个属于女子足球的内容生态。</p>
+    </div>
+    <div class="bws-about-grid">
+      <div class="bws-about-copy">
+        <p><b>白袜女足</b>并不是一个只做赛事剪辑的账号，而是一个完整的原创视频品牌。我们把「白袜」视为一种朴素的符号：它属于刚学会系鞋带的女孩，也属于在雨天泥地里坚持训练的老队员；它出现在校园球场、社区五人制场地、城市灯光球场，也出现在无数个被手机随手拍下的傍晚。官网把镜头对准这些场景，用可靠的拍摄流程与真诚的叙事，让女子足球的日常被更多人看见。</p>
+        <p>在定位上，白袜女足深耕女子足球垂直领域，内容覆盖青训记录、校园联赛、球员访谈、战术拆解与教练课程五个方向。我们不追逐夸张的戏剧化处理，而是相信真实的力量：一次成功的补位、一场落后的逆转、一段带伤复出的训练日志，都值得被高清记录。品牌的成长来自球场，也来自每一位愿意按下录制键的创作者。</p>
+        <p>社区是白袜女足的第二块主场。我们为签约创作者提供拍摄清单、剪辑模板与选题建议，让第一次拍球赛的用户也能剪出完整的视频内容。同时，平台定期发布官方话题与创作挑战，举办线上投票与线下观影交流，让内容生态保持多元与包容。无论你是一名球队经理、一位球童家长，还是坐在看台上举着手机的普通球迷，都能在这里找到自己的位置。</p>
+        <p>作为一家持续运营的视频品牌，白袜女足重视口碑与品质，也重视社会责任。我们与多所学校的女足梯队保持长期合作，为缺乏拍摄条件的球队提供设备支持与影像档案服务；我们坚持正版素材与原创署名，尊重每一位被拍摄者。官方网站是品牌与社区之间的公开窗口，所有官方发布、企业动态与合作信息都会在这里同步更新。</p>
+        <p>过去几年里，白袜女足累计发布原创影像一千余部，合作球队覆盖数十个城市，签约创作者超过三百位。这些数字并不追求规模上的宏大，而是想说明一件事：女子足球有足够多的故事，只缺少稳定的记录者。我们愿意做那个长期在场的记录者，陪伴球员成长，陪伴内容生态一点点变得完整。白袜女足，值得信赖的女子足球影像社区。</p>
+      </div>
+      <div class="bws-about-cards">
+        <div class="bws-about-card">
+          <h3>官方定位 · 女子足球影像社区</h3>
+          <p>以原创高清记录为核心，覆盖青训、校园、社区与业余联赛，形成稳定的内容供给。</p>
+        </div>
+        <div class="bws-about-card">
+          <h3>内容原则 · 真实优先</h3>
+          <p>拒绝摆拍式脚本，坚持跟拍与长镜头。每个镜头都来自真实训练与比赛现场。</p>
+        </div>
+        <div class="bws-about-card">
+          <h3>创作生态 · 与创作者共成长</h3>
+          <p>提供选题库、拍摄清单、剪辑模板与流量扶持，帮助新人完成第一部球场短片。</p>
+        </div>
+        <div class="bws-about-card">
+          <h3>品牌温度 · 陪伴式记录</h3>
+          <p>同一支球队连续记录三个赛季，为球员留下可回看的成长轨迹与影像档案。</p>
+        </div>
+        <div class="bws-about-quote">「一场比赛结束得快，一段影像留得久。我们希望十年后回看，仍能认出那天傍晚的风和队友的喊声。」——白袜女足编辑部</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 焦点影像 ============ -->
+<section class="bws-focus" id="bws-focus">
+  <div class="bws-wrap">
+    <div class="bws-sec-head">
+      <div>
+        <div class="bws-sec-eyebrow">Focus Videos</div>
+        <h2>焦点影像 · 本周值得完整看完的六部作品</h2>
+      </div>
+      <p>由编辑部与社区共同推荐，涵盖青训跟拍、球员访谈与战术拆解，每部均为原创高清制作。</p>
+    </div>
+    <div class="bws-focus-grid">
+      <article class="bws-card bws-card-main">
+        <div class="bws-card-cover">
+          <span class="bws-cover-tag">本周主推</span>
+          <svg viewBox="0 0 640 360" role="img" aria-label="白袜之下第十二期封面：两名女足球员在训练场边相拥的画面">
+            <defs>
+              <linearGradient id="bwsMainBg" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#0f5a3f"/>
+                <stop offset="1" stop-color="#2fae7c"/>
+              </linearGradient>
+            </defs>
+            <rect width="640" height="360" fill="url(#bwsMainBg)"/>
+            <g opacity=".22" fill="#fff">
+              <circle cx="120" cy="90" r="70"/>
+              <circle cx="540" cy="280" r="90"/>
+            </g>
+            <g>
+              <circle cx="262" cy="142" r="30" fill="#f6e7cf"/>
+              <path d="M232 138 q30 -38 60 0 q-8 -34 -30 -34 q-22 0 -30 34z" fill="#2b1d13"/>
+              <path d="M234 172 q28 18 56 0 l12 54 q-40 20 -80 0z" fill="#ffffff"/>
+              <path d="M378 142 a30 30 0 1 1 0.1 0" fill="#f6e7cf"/>
+              <path d="M350 140 q28 -34 58 0 q-6 -32 -28 -32 q-24 0 -30 32z" fill="#5a3825"/>
+              <path d="M350 172 q28 18 56 0 l12 54 q-40 20 -80 0z" fill="#f4d06f"/>
+              <path d="M288 190 q22 14 46 0" stroke="#f6e7cf" stroke-width="10" stroke-linecap="round" fill="none"/>
+            </g>
+            <g fill="#e9faf1" opacity=".9">
+              <rect x="40" y="300" width="120" height="4" rx="2"/>
+              <rect x="180" y="300" width="60" height="4" rx="2"/>
+            </g>
+          </svg>
+          <span class="bws-cover-time">18:42</span>
+        </div>
+        <div class="bws-card-body">
+          <h3>白袜之下 第12期：落后两球之后，她们在雨中扳平</h3>
+          <p class="bws-desc">跟拍青浦区校园联赛决赛，记录一支平均年龄不到 15 岁的女足队伍从落后到扳平的完整过程。包含中场更衣室对话、教练临场调整与赛后球员自述。</p>
+          <div class="bws-tags"><span class="bws-tag">青训跟拍</span><span class="bws-tag">校园联赛</span><span class="bws-tag">真实记录</span></div>
+          <div class="bws-meta">
+            <span class="bws-avatar" style="background:#1a7f5a">白</span>
+            <span>白袜女足编辑部</span><span>·</span><span>11月16日</span>
+          </div>
+          <div class="bws-actions">
+            <button class="bws-act" type="button" data-bws-like><span>♡</span><b>3.2k</b></button>
+            <button class="bws-act" type="button" data-bws-fav><span>☆</span>收藏</button>
+            <button class="bws-act" type="button" data-bws-comment>评论</button>
+            <button class="bws-act" type="button" data-bws-share>分享</button>
+          </div>
+        </div>
+      </article>
+      <div class="bws-focus-side">
+        <article class="bws-mini">
+          <div class="bws-mini-cover">
+            <span class="bws-cover-time">09:15</span>
+            <svg viewBox="0 0 320 200" role="img" aria-label="战术拆解封面：球场俯视图与箭头跑位示意">
+              <rect width="320" height="200" fill="#12684b"/>
+              <g stroke="#d9f4e6" stroke-width="2" opacity=".6" fill="none">
+                <rect x="18" y="18" width="284" height="164" rx="4"/>
+                <path d="M160 18 V182"/><circle cx="160" cy="100" r="34"/>
+              </g>
+              <path d="M92 140 q50 -50 110 -60" stroke="#f4d06f" stroke-width="4" fill="none" stroke-dasharray="8 7"/>
+              <circle cx="92" cy="140" r="7" fill="#fff"/>
+              <circle cx="202" cy="80" r="7" fill="#c8462f"/>
+            </svg>
+          </div>
+          <div class="bws-mini-body">
+            <h4>三人小组如何破高位压迫：女子青训战术拆解</h4>
+            <small>战术拆解 · 4.1k 次观看</small>
+          </div>
+        </article>
+        <article class="bws-mini">
+          <div class="bws-mini-cover">
+            <span class="bws-cover-time">12:08</span>
+            <svg viewBox="0 0 320 200" role="img" aria-label="球员访谈封面：球员坐在球场看台接受采访">
+              <rect width="320" height="200" fill="#1d3b2f"/>
+              <g opacity=".5" fill="#4f7a66"><rect y="140" width="320" height="60"/></g>
+              <circle cx="140" cy="82" r="26" fill="#f6e7cf"/>
+              <path d="M112 78 q28 -34 56 0 q-8 -30 -28 -30 q-20 0 -28 30z" fill="#2b1d13"/>
+              <rect x="110" y="112" width="60" height="46" rx="10" fill="#f4d06f"/>
+              <rect x="192" y="70" width="46" height="60" rx="6" fill="#cfe5da"/>
+              <rect x="196" y="130" width="38" height="6" rx="3" fill="#8fb9a5"/>
+            </svg>
+          </div>
+          <div class="bws-mini-body">
+            <h4>访谈：守门员的第一双白袜与她的九年</h4>
+            <small>人物访谈 · 2.8k 次观看</small>
+          </div>
+        </article>
+        <article class="bws-mini">
+          <div class="bws-mini-cover">
+            <span class="bws-cover-time">06:47</span>
+            <svg viewBox="0 0 320 200" role="img" aria-label="训练教程封面：带球绕桩训练动作分解">
+              <rect width="320" height="200" fill="#2aa474"/>
+              <g stroke="#eafaf2" stroke-width="3" opacity=".75">
+                <path d="M40 160 H280"/><path d="M70 160 V120 M110 160 V110 M150 160 V118 M190 160 V108 M230 160 V120"/>
+              </g>
+              <circle cx="150" cy="86" r="16" fill="#f6e7cf"/>
+              <circle cx="150" cy="86" r="16" fill="none" stroke="#f6e7cf" stroke-width="2"/>
+              <path d="M138 104 q12 10 24 0 l6 26 q-18 10 -36 0z" fill="#fff"/>
+              <circle cx="230" cy="152" r="9" fill="#f4d06f" stroke="#0f5a3f" stroke-width="2"/>
+            </svg>
+          </div>
+          <div class="bws-mini-body">
+            <h4>零基础带球绕桩：8 组动作陪练教程</h4>
+            <small>教程干货 · 6.3k 次观看</small>
+          </div>
+        </article>
+        <article class="bws-mini">
+          <div class="bws-mini-cover">
+            <span class="bws-cover-time">14:02</span>
+            <svg viewBox="0 0 320 200" role="img" aria-label="城市探索封面：傍晚灯光球场与围栏剪影">
+              <rect width="320" height="200" fill="#233c53"/>
+              <circle cx="248" cy="52" r="24" fill="#f4d06f" opacity=".9"/>
+              <rect y="150" width="320" height="50" fill="#1b2d3f"/>
+              <g stroke="#4f7a66" stroke-width="2">
+                <path d="M0 150 H320 M20 100 V150 M80 100 V150 M140 100 V150 M200 100 V150 M260 100 V150 M310 100 V150"/>
+                <path d="M20 100 H310"/>
+              </g>
+              <rect x="128" y="120" width="10" height="30" fill="#cfe5da"/>
+              <circle cx="133" cy="112" r="9" fill="#f6e7cf"/>
+            </svg>
+          </div>
+          <div class="bws-mini-body">
+            <h4>她脚下的城市：青岛夜场女足生存记录</h4>
+            <small>城市探索 · 3.5k 次观看</small>
+          </div>
+        </article>
+        <article class="bws-mini">
+          <div class="bws-mini-cover">
+            <span class="bws-cover-time">07:33</span>
+            <svg viewBox="0 0 320 200" role="img" aria-label="创作幕后封面：摄像机与场边摄制组">
+              <rect width="320" height="200" fill="#8a6f4a"/>
+              <rect x="34" y="70" width="76" height="56" rx="8" fill="#1d2a24"/>
+              <circle cx="72" cy="98" r="18" fill="#2fae7c"/>
+              <circle cx="72" cy="98" r="8" fill="#eafaf2"/>
+              <rect x="150" y="90" width="90" height="54" rx="6" fill="#f6f3ea"/>
+              <path d="M240 100 l44 -18 v70 l-44 -18z" fill="#f6f3ea"/>
+              <rect y="160" width="320" height="40" fill="#6a5438"/>
+            </svg>
+          </div>
+          <div class="bws-mini-body">
+            <h4>创作幕后：如何用一支手机拍完一场女足比赛</h4>
+            <small>创作幕后 · 5.0k 次观看</small>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 专题企划 ============ -->
+<section class="bws-topics" id="bws-topics">
+  <div class="bws-wrap">
+    <div class="bws-sec-head">
+      <div>
+        <div class="bws-sec-eyebrow">Series &amp; Projects</div>
+        <h2>专题企划 · 四条正在更新的内容线索</h2>
+      </div>
+      <p>以季播方式持续记录，每个专题都有固定的拍摄对象与更新节奏，形成可追溯的品牌内容资产。</p>
+    </div>
+    <div class="bws-topic-grid">
+      <article class="bws-topic">
+        <div class="bws-topic-cover">
+          <svg viewBox="0 0 480 270" role="img" aria-label="白袜之下专题封面：球场边线视角与更衣室灯光">
+            <rect width="480" height="270" fill="#0f5a3f"/>
+            <path d="M0 190 L480 190 L480 270 L0 270Z" fill="#2aa474"/>
+            <g stroke="#eafaf2" stroke-width="2" opacity=".5" fill="none">
+              <path d="M0 220 H480"/><circle cx="240" cy="236" r="42"/>
+            </g>
+            <rect x="330" y="60" width="96" height="70" rx="6" fill="#f4d06f" opacity=".9"/>
+            <path d="M120 150 l24 -20 l24 20 l-8 46 h-32z" fill="#fff"/>
+          </svg>
+        </div>
+        <div class="bws-topic-body">
+          <h3>白袜之下 · 青训跟拍季</h3>
+          <p>长期跟拍三支校园女足梯队一个完整赛季，从冬训到决赛，记录球员与教练的真实状态。</p>
+          <span class="bws-status">更新中 · 已上线 12 期</span>
+        </div>
+      </article>
+      <article class="bws-topic">
+        <div class="bws-topic-cover">
+          <svg viewBox="0 0 480 270" role="img" aria-label="她脚下的城市专题封面：城市天际线与球场围栏">
+            <rect width="480" height="270" fill="#233c53"/>
+            <g fill="#1b2d3f"><rect x="30" y="120" width="44" height="150"/><rect x="90" y="86" width="36" height="184"/><rect x="146" y="140" width="52" height="130"/><rect x="220" y="70" width="40" height="200"/><rect x="282" y="118" width="46" height="152"/><rect x="350" y="96" width="38" height="174"/></g>
+            <g fill="#f4d06f" opacity=".8"><rect x="40" y="140" width="8" height="8"/><rect x="100" y="110" width="8" height="8"/><rect x="234" y="100" width="8" height="8"/><rect x="362" y="130" width="8" height="8"/></g>
+            <path d="M0 214 H480" stroke="#4f7a66" stroke-width="3"/>
+            <circle cx="410" cy="48" r="22" fill="#eafaf2" opacity=".85"/>
+          </svg>
+        </div>
+        <div class="bws-topic-body">
+          <h3>她脚下的城市 · 城市场地探索</h3>
+          <p>走访不同城市的女子足球场地，记录灯光球场、社区草坪与校园土场背后的组织者故事。</p>
+          <span class="bws-status">预热中 · 第二季拍摄</span>
+        </div>
+      </article>
+      <article class="bws-topic">
+        <div class="bws-topic-cover">
+          <svg viewBox="0 0 480 270" role="img" aria-label="教练席专题封面：战术板与哨子特写">
+            <rect width="480" height="270" fill="#f6f3ea"/>
+            <rect x="56" y="46" width="220" height="170" rx="10" fill="#0f5a3f"/>
+            <g stroke="#eafaf2" stroke-width="2" opacity=".7" fill="none">
+              <rect x="72" y="62" width="188" height="138"/><path d="M166 62 V200"/><circle cx="166" cy="131" r="28"/>
+            </g>
+            <path d="M110 168 q40 -46 84 -30" stroke="#f4d06f" stroke-width="4" fill="none"/>
+            <circle cx="330" cy="150" r="34" fill="none" stroke="#8a6f4a" stroke-width="10"/>
+            <path d="M330 150 l30 22" stroke="#8a6f4a" stroke-width="8" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="bws-topic-body">
+          <h3>教练席 · 战术与带队的公开课</h3>
+          <p>邀请青训教练与退役球员出镜，拆解女子足球训练方法、阵型选择与团队沟通技巧。</p>
+          <span class="bws-status">更新中 · 已上线 8 期</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 内容社区热门视频流 ============ -->
+<section class="bws-stream" id="bws-stream">
+  <div class="bws-wrap">
+    <div class="bws-sec-head">
+      <div>
+        <div class="bws-sec-eyebrow">Community Stream</div>
+        <h2>内容社区 · 来自创作者的六部热门作品</h2>
+      </div>
+      <p>点击标签可筛选内容，所有作品均为社区创作者上传，经编辑部审核后发布。</p>
+    </div>
+    <div class="bws-filter" id="bws-filter">
+      <button class="bws-chip is-active" type="button" data-bws-filter="all">全部</button>
+      <button class="bws-chip" type="button" data-bws-filter="tutorial">教程干货</button>
+      <button class="bws-chip" type="button" data-bws-filter="review">深度测评</button>
+      <button class="bws-chip" type="button" data-bws-filter="city">城市探索</button>
+      <button class="bws-chip" type="button" data-bws-filter="behind">创作幕后</button>
+      <button class="bws-chip" type="button" data-bws-filter="life">日常记录</button>
+    </div>
+    <div class="bws-stream-grid" id="bws-stream-grid">
+      <article class="bws-card" data-bws-cat="tutorial">
+        <div class="bws-card-cover">
+          <span class="bws-cover-tag">教程干货</span>
+          <svg viewBox="0 0 480 270" role="img" aria-label="女足基础传球教程封面：两人短传配合示意图">
+            <rect width="480" height="270" fill="#2aa474"/>
+            <g stroke="#eafaf2" stroke-width="3" opacity=".6" fill="none"><path d="M40 210 H440"/><circle cx="240" cy="215" r="34"/></g>
+            <circle cx="160" cy="110" r="22" fill="#f6e7cf"/>
+            <path d="M138 108 q22 -26 44 0 q-6 -24 -22 -24 q-16 0 -22 24z" fill="#2b1d13"/>
+            <path d="M140 132 q20 12 40 0 l8 40 q-28 14 -56 0z" fill="#fff"/>
+            <circle cx="322" cy="140" r="22" fill="#f6e7cf"/>
+            <path d="M302 136 q20 -26 40 0 q-4 -24 -20 -24 q-16 0 -20 24z" fill="#5a3825"/>
+            <path d="M304 162 q18 12 36 0 l8 38 q-26 14 -52 0z" fill="#f4d06f"/>
+            <path d="M196 156 q44 10 82 4" stroke="#0f5a3f" stroke-width="4" stroke-dasharray="9 8" fill="none"/>
+          </svg>
+          <span class="bws-cover-time">11:26</span>
+        </div>
+        <div class="bws-card-body">
+          <h3>女足基础传球：脚内侧推传的五个关键细节</h3>
+          <p class="bws-desc">从触球部位、支撑脚位置到跟随动作，逐帧讲解最容易忽略的细节，适合刚开始系统训练的球员。</p>
+          <div class="bws-tags"><span class="bws-tag">教程干货</span><span class="bws-tag">青训</span></div>
+          <div class="bws-meta"><span class="bws-avatar" style="background:#2fae7c">林</span><span>林野守门日志</span><span>·</span><span>11月14日</span></div>
+          <div class="bws-actions">
+            <button class="bws-act" type="button" data-bws-like><span>♡</span><b>1.8k</b></button>
+            <button class="bws-act" type="button" data-bws-fav><span>☆</span>收藏</button>
+            <button class="bws-act" type="button" data-bws-comment>评论</button>
+            <button class="bws-act" type="button" data-bws-share>分享</button>
+          </div>
+        </div>
+      </article>
+      <article class="bws-card" data-bws-cat="review">
+        <div class="bws-card-cover">
+          <span class="bws-cover-tag">深度测评</span>
+          <svg viewBox="0 0 480 270" role="img" aria-label="女足鞋测评封面：三双不同款球鞋排列在草地">
+            <rect width="480" height="270" fill="#8a6f4a"/>
+            <rect y="188" width="480" height="82" fill="#2aa474"/>
+            <g>
+              <ellipse cx="112" cy="188" rx="54" ry="16" fill="#fff"/>
+              <ellipse cx="240" cy="188" rx="54" ry="16" fill="#f4d06f"/>
+              <ellipse cx="368" cy="188" rx="54" ry="16" fill="#c8462f"/>
+              <path d="M70 176 q42 -22 84 0" stroke="#d9d2c2" stroke-width="3" fill="none"/>
+              <path d="M198 176 q42 -22 84 0" stroke="#c9a24a" stroke-width="3" fill="none"/>
+              <path d="M326 176 q42 -22 84 0" stroke="#f2a99a" stroke-width="3" fill="none"/>
+            </g>
+            <g fill="#eafaf2" opacity=".8"><rect x="30" y="34" width="90" height="6" rx="3"/><rect x="30" y="52" width="56" height="6" rx="3"/></g>
+          </svg>
+          <span class="bws-cover-time">16:04</span>
+        </div>
+        <div class="bws-card-body">
+          <h3>三双人气女足鞋横评：抓地、保护与性价比</h3>
+          <p class="bws-desc">在真实草坪与人工草皮各测试两周，从鞋钉、鞋面到脚踝支撑给出具体场景建议。</p>
+          <div class="bws-tags"><span class="bws-tag">深度测评</span><span class="bws-tag">装备</span></div>
+          <div class="bws-meta"><span class="bws-avatar" style="background:#8a6f4a">阿</span><span>阿桦装备笔记</span><span>·</span><span>11月12日</span></div>
+          <div class="bws-actions">
+            <button class="bws-act" type="button" data-bws-like><span>♡</span><b>2.4k</b></button>
+            <button class="bws-act" type="button" data-bws-fav><span>☆</span>收藏</button>
+            <button class="bws-act" type="button" data-bws-comment>评论</button>
+            <button class="bws-act" type="button" data-bws-share>分享</button>
+          </div>
+        </div>
+      </article>
+      <article class="bws-card" data-bws-cat="city">
+        <div class="bws-card-cover">
+          <span class="bws-cover-tag">城市探索</span>
+          <svg viewBox="0 0 480 270" role="img" aria-label="西安城墙下女足球场封面：城墙与球门并置">
+            <rect width="480" height="270" fill="#dfe9e4"/>
+            <rect y="150" width="480" height="120" fill="#5f7a6b"/>
+            <g fill="#b9a688"><rect x="20" y="70" width="180" height="92"/><rect x="52" y="46" width="24" height="26"/><rect x="104" y="46" width="24" height="26"/><rect x="156" y="46" width="24" height="26"/></g>
+            <g stroke="#8a7458" stroke-width="2" fill="none"><path d="M20 112 h180 M20 140 h180"/></g>
+            <g stroke="#f2f7f4" stroke-width="6" fill="none"><path d="M330 240 V170 H450 V240"/><path d="M330 182 H450 M330 200 H450 M330 218 H450 M330 236 H450"/></g>
+            <circle cx="392" cy="222" r="11" fill="#f4d06f"/>
+          </svg>
+          <span class="bws-cover-time">09:38</span>
+        </div>
+        <div class="bws-card-body">
+          <h3>西安城墙下的女足球场：一支业余队的十年</h3>
+          <p class="bws-desc">从城墙根的水泥地到标准草坪，记录一支由教师、护士与学生组成的业余女足的场地变迁。</p>
+          <div class="bws-tags"><span class="bws-tag">城市探索</span><span class="bws-tag">业余联赛</span></div>
+          <div class="bws-meta"><span class="bws-avatar" style="background:#5b7fa8">小</span><span>小陶拍球场</span><span>·</span><span>11月10日</span></div>
+          <div class="bws-actions">
+            <button class="bws-act" type="button" data-bws-like><span>♡</span><b>3.7k</b></button>
+            <button class="bws-act" type="button" data-bws-fav><span>☆</span>收藏</button>
+            <button class="bws-act" type="button" data-bws-comment>评论</button>
+            <button class="bws-act" type="button" data-bws-share>分享</button>
+          </div>
+        </div>
+      </article>
+      <article class="bws-card" data-bws-cat="behind">
+        <div class="bws-card-cover">
+          <span class="bws-cover-tag">创作幕后</span>
+          <svg viewBox="0 0 480 270" role="img" aria-label="手机拍摄足球比赛幕后封面：三脚架与球场边线">
+            <rect width="480" height="270" fill="#1d2a24"/>
+            <rect y="200" width="480" height="70" fill="#2aa474"/>
+            <path d="M240 200 V120" stroke="#cfe5da" stroke-width="5"/>
+            <rect x="204" y="60" width="72" height="104" rx="10" fill="#f6f3ea"/>
+            <rect x="214" y="72" width="52" height="78" rx="4" fill="#2fae7c"/>
+            <path d="M240 200 l-30 54 M240 200 l30 54" stroke="#cfe5da" stroke-width="5"/>
+            <g fill="#f4d06f"><circle cx="100" cy="150" r="10"/><circle cx="372" cy="132" r="10"/></g>
+          </svg>
+          <span class="bws-cover-time">13:20</span>
+        </div>
+        <div class="bws-card-body">
+          <h3>用一台手机拍完整场比赛：机位、收音与防抖</h3>
+          <p class="bws-desc">预算有限也能记录完整赛事，分享三脚架角度、外接麦克风选择与后期稳定处理的具体做法。</p>
+          <div class="bws-tags"><span class="bws-tag">创作幕后</span><span class="bws-tag">实用技巧</span></div>
+          <div class="bws-meta"><span class="bws-avatar" style="background:#4a5c53">陆</span><span>陆离镜头台</span><span>·</span><span>11月8日</span></div>
+          <div class="bws-actions">
+            <button class="bws-act" type="button" data-bws-like><span>♡</span><b>1.5k</b></button>
+            <button class="bws-act" type="button" data-bws-fav><span>☆</span>收藏</button>
+            <button class="bws-act" type="button" data-bws-comment>评论</button>
+            <button class="bws-act" type="button" data-bws-share>分享</button>
+          </div>
+        </div>
+      </article>
+      <article class="bws-card" data-bws-cat="life">
+        <div class="bws-card-cover">
+          <span class="bws-cover-tag">日常记录</span>
+          <svg viewBox="0 0 480 270" role="img" aria-label="清晨训练日常封面：晾衣绳上的白袜与晨光">
+            <rect width="480" height="270" fill="#f2e6cf"/>
+            <circle cx="380" cy="66" r="34" fill="#f4d06f" opacity=".85"/>
+            <path d="M20 120 q220 42 440 0" stroke="#8a6f4a" stroke-width="3" fill="none"/>
+            <g fill="#fff">
+              <path d="M96 126 q-8 34 12 46 q22 12 30 -10 q6 -18 -12 -26 q-16 -6 -14 -22z"/>
+              <path d="M208 140 q-8 34 12 46 q22 12 30 -10 q6 -18 -12 -26 q-16 -6 -14 -22z"/>
+              <path d="M320 148 q-8 34 12 46 q22 12 30 -10 q6 -18 -12 -26 q-16 -6 -14 -22z"/>
+            </g>
+            <rect y="216" width="480" height="54" fill="#c9b892"/>
+          </svg>
+          <span class="bws-cover-time">05:52</span>
+        </div>
+        <div class="bws-card-body">
+          <h3>清晨五点半：一位青训妈妈的陪练日常</h3>
+          <p class="bws-desc">跟随一位母亲记录送训、陪练、洗球袜的日常，呈现校园女足背后容易被忽略的家庭支持。</p>
+          <div class="bws-tags"><span class="bws-tag">日常记录</span><span class="bws-tag">亲子成长</span></div>
+          <div class="bws-meta"><span class="bws-avatar" style="background:#b3794a">顾</span><span>顾妈妈手记</span><span>·</span><span>11月6日</span></div>
+          <div class="bws-actions">
+            <button class="bws-act" type="button" data-bws-like><span>♡</span><b>4.9k</b></button>
+            <button class="bws-act" type="button" data-bws-fav><span>☆</span>收藏</button>
+            <button class="bws-act" type="button" data-bws-comment>评论</button>
+            <button class="bws-act" type="button" data-bws-share>分享</button>
+          </div>
+        </div>
+      </article>
+      <article class="bws-card" data-bws-cat="tutorial">
+        <div class="bws-card-cover">
+          <span class="bws-cover-tag">教程干货</span>
+          <svg viewBox="0 0 480 270" role="img" aria-label="守门员入门教程封面：扑救动作分解示意">
+            <rect width="480" height="270" fill="#12684b"/>
+            <g stroke="#eafaf2" stroke-width="6" fill="none" opacity=".9"><path d="M300 210 V90 H440 V210"/><path d="M300 106 H440 M300 122 H440 M300 138 H440 M300 154 H440 M300 170 H440 M300 186 H440"/></g>
+            <circle cx="380" cy="80" r="16" fill="#f4d06f"/>
+            <g fill="#fff"><path d="M170 170 q20 -22 40 0 l14 40 q-34 16 -68 0z"/></g>
+            <circle cx="190" cy="142" r="20" fill="#f6e7cf"/>
+            <path d="M168 138 q22 -24 44 0 q-6 -22 -22 -22 q-16 0 -22 22z" fill="#2b1d13"/>
+            <path d="M150 176 l-40 20 M228 176 l36 -18" stroke="#f6e7cf" stroke-width="8" stroke-linecap="round"/>
+          </svg>
+          <span class="bws-cover-time">10:11</span>
+        </div>
+        <div class="bws-card-body">
+          <h3>守门员入门：低平球扑救的地面动作拆解</h3>
+          <p class="bws-desc">从站位、重心到落地缓冲，演示初学者最容易受伤的三个错误动作与纠正方法。</p>
+          <div class="bws-tags"><span class="bws-tag">教程干货</span><span class="bws-tag">守门员</span></div>
+          <div class="bws-meta"><span class="bws-avatar" style="background:#1a7f5a">林</span><span>林野守门日志</span><span>·</span><span>11月4日</span></div>
+          <div class="bws-actions">
+            <button class="bws-act" type="button" data-bws-like><span>♡</span><b>2.1k</b></button>
+            <button class="bws-act" type="button" data-bws-fav><span>☆</span>收藏</button>
+            <button class="bws-act" type="button" data-bws-comment>评论</button>
+            <button class="bws-act" type="button" data-bws-share>分享</button>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="bws-empty" id="bws-empty">该标签下暂无内容，试试其他筛选。</div>
+  </div>
+</section>
+
+<!-- ============ 创作者矩阵 ============ -->
+<section class="bws-makers" id="bws-makers">
+  <div class="bws-wrap">
+    <div class="bws-sec-head">
+      <div>
+        <div class="bws-sec-eyebrow">Creators</div>
+        <h2>创作者矩阵 · 长期在场的内容伙伴</h2>
+      </div>
+      <p>他们来自不同城市与职业，共同点是愿意把镜头对准球场，把女子足球的日常讲清楚。</p>
+    </div>
+    <div class="bws-maker-grid">
+      <article class="bws-maker">
+        <div class="bws-maker-ava" style="background:#1a7f5a">林</div>
+        <h3>林野守门日志</h3>
+        <div class="bws-field">守门员训练 · 教程干货</div>
+        <p>退役门将，现为青训守门员教练，擅长把复杂动作拆成初学者能懂的小步骤。</p>
+        <div class="bws-maker-data"><div><b>86</b>作品</div><div><b>2.4万</b>粉丝</div></div>
+        <button type="button" data-bws-author="林野守门日志">查看主页</button>
+      </article>
+      <article class="bws-maker">
+        <div class="bws-maker-ava" style="background:#8a6f4a">阿</div>
+        <h3>阿桦装备笔记</h3>
+        <div class="bws-field">装备测评 · 深度测评</div>
+        <p>独立测评作者，坚持自费购买与长期实测，拒绝照读参数，重视真实使用感受。</p>
+        <div class="bws-maker-data"><div><b>54</b>作品</div><div><b>1.7万</b>粉丝</div></div>
+        <button type="button" data-bws-author="阿桦装备笔记">查看主页</button>
+      </article>
+      <article class="bws-maker">
+        <div class="bws-maker-ava" style="background:#5b7fa8">小</div>
+        <h3>小陶拍球场</h3>
+        <div class="bws-field">城市探索 · 业余联赛</div>
+        <p>自由摄影师，用十年时间走遍西北城市的女子足球场地，记录人而不是比分。</p>
+        <div class="bws-maker-data"><div><b>132</b>作品</div><div><b>3.6万</b>粉丝</div></div>
+        <button type="button" data-bws-author="小陶拍球场">查看主页</button>
+      </article>
+      <article class="bws-maker">
+        <div class="bws-maker-ava" style="background:#b3794a">顾</div>
+        <h3>顾妈妈手记</h3>
+        <div class="bws-field">日常记录 · 亲子成长</div>
+        <p>青训球员家长，记录陪练与家庭支持的真实日常，文字朴素，镜头温暖。</p>
+        <div class="bws-maker-data"><div><b>41</b>作品</div><div><b>1.2万</b>粉丝</div></div>
+        <button type="button" data-bws-author="顾妈妈手记">查看主页</button>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 品牌故事 / 随笔 ============ -->
+<section class="bws-stories" id="bws-stories">
+  <div class="bws-wrap">
+    <div class="bws-sec-head">
+      <div>
+        <div class="bws-sec-eyebrow">Brand Stories</div>
+        <h2>品牌故事 · 影像之外的三段记录</h2>
+      </div>
+      <p>每部视频背后都有一段没剪进去的时间，我们把它写下来，作为品牌故事的补充。</p>
+    </div>
+    <div class="bws-story-grid">
+      <article class="bws-story">
+        <h3>第一次开机：在一场没人看的雨中训练</h3>
+        <p>2019 年的一个雨天，我们在社区球场遇见一支只有九名队员的女足。没有观众，没有转播机位，只有一块塑料布盖着的替补席。那次拍摄只有一个机位、一块备用电池和三十七分钟的素材，却成了白袜女足品牌故事的开端。后来我们才知道，那天是队长伤愈后的第一次合练。</p>
+        <small>编辑部 · 2026 年 10 月</small>
+      </article>
+      <article class="bws-story">
+        <h3>白袜的由来：洗不掉的那双</h3>
+        <p>品牌名字来自一位青训球员的抱怨：白色球袜永远洗不干净。我们把这个细节留在名字里，因为它足够真实。白袜并不洁白无瑕，它沾着泥、草屑和汗，恰恰是女子足球最具体的样子。官网的视觉系统沿用白色与球场绿的对比，也是提醒自己不要在影像里使用过度的滤镜。</p>
+        <small>品牌组 · 2026 年 9 月</small>
+      </article>
+      <article class="bws-story">
+        <h3>连续三个赛季：同一支球队的成长档案</h3>
+        <p>从初一到初三，我们跟拍了一支校园女足整整三个赛季。素材里有她们第一次进球的混乱庆祝，也有输球后不愿面对镜头的沉默。这份影像档案最终被交还给球队，作为毕业礼物。我们相信，陪伴式记录比任何宣传语都更有力量，这也是白袜女足持续运营的核心理由。</p>
+        <small>纪录片组 · 2026 年 8 月</small>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 榜单 + 创作灵感 ============ -->
+<section class="bws-extra" id="bws-extra">
+  <div class="bws-wrap">
+    <div class="bws-extra-grid">
+      <div class="bws-panel">
+        <h2>本周热度榜</h2>
+        <div class="bws-panel-sub">按完整播放与收藏加权统计，每周一更新</div>
+        <ol class="bws-rank">
+          <li><span class="bws-no">1</span><span class="bws-rank-t">清晨五点半：一位青训妈妈的陪练日常</span><span class="bws-rank-n">4.9k</span></li>
+          <li><span class="bws-no">2</span><span class="bws-rank-t">西安城墙下的女足球场：一支业余队的十年</span><span class="bws-rank-n">3.7k</span></li>
+          <li><span class="bws-no">3</span><span class="bws-rank-t">白袜之下 第12期：雨中扳平</span><span class="bws-rank-n">3.2k</span></li>
+          <li><span class="bws-no">4</span><span class="bws-rank-t">三双人气女足鞋横评</span><span class="bws-rank-n">2.4k</span></li>
+          <li><span class="bws-no">5</span><span class="bws-rank-t">守门员入门：低平球扑救拆解</span><span class="bws-rank-n">2.1k</span></li>
+        </ol>
+      </div>
+      <div class="bws-panel">
+        <h2>创作灵感与实用工具</h2>
+        <div class="bws-panel-sub">为社区创作者准备的选题、标题与剪辑建议</div>
+        <div class="bws-idea">
+          <div class="bws-idea-item">
+            <h3>脚本灵感：从「一个动作」开始</h3>
+            <p>不要试图拍整支球队，先拍一个人做同一个动作的三次。三次之间的差别，往往就是故事的入口。</p>
+            <span class="bws-idea-tag">选题建议</span>
+          </div>
+          <div class="bws-idea-item">
+            <h3>标题建议：具体胜过形容词</h3>
+            <p>把「精彩的比赛」换成「第七十分钟，她换下受伤的队友」。具体的时间、动作与人物更容易被记住。</p>
+            <span class="bws-idea-tag">标题优化</span>
+          </div>
+          <div class="bws-idea-item">
+            <h3>剪辑思路：保留两次呼吸</h3>
+            <p>在关键动作前后各留半秒现场声，观众的紧张感会自然建立，不必依赖音乐堆叠情绪。</p>
+            <span class="bws-idea-tag">剪辑技巧</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ + 联系 ============ -->
+<section class="bws-faq" id="bws-faq">
+  <div class="bws-wrap">
+    <div class="bws-sec-head">
+      <div>
+        <div class="bws-sec-eyebrow">Help &amp; Contact</div>
+        <h2>帮助中心与官方联系</h2>
+      </div>
+      <p>关于投稿、版权与合作，这里给出最直接的回答；如需进一步沟通，可通过官方邮箱联系编辑部。</p>
+    </div>
+    <div class="bws-faq-wrap">
+      <div class="bws-faq-list">
+        <details open>
+          <summary>如何向白袜女足投稿自己的球场影像？</summary>
+          <p>点击页面任意「投稿」按钮，填写作品标题、拍摄城市与内容简介。投稿后编辑部会在五个工作日内回复，通过审核的作品将进入内容社区并标注原创作者。</p>
+        </details>
+        <details>
+          <summary>投稿对设备和画质有硬性要求吗？</summary>
+          <p>没有硬性设备门槛。手机拍摄同样可以投稿，我们更看重内容真实与叙事完整。建议横屏拍摄、保持稳定，并在安静环境下录制必要的旁白。</p>
+        </details>
+        <details>
+          <summary>平台如何保护被拍摄球员的肖像权？</summary>
+          <p>涉及未成年球员的画面，需提供监护人书面同意。我们会对可识别身份的画面做必要处理，并在作品页标注拍摄许可信息，尊重每一位被拍摄者。</p>
+        </details>
+        <details>
+          <summary>球队可以申请影像档案合作吗？</summary>
+          <p>可以。青训梯队、校园球队与业余女足均可提交合作申请。我们会根据赛季安排提供拍摄支持，并为球队建立长期可回看的影像档案。</p>
+        </details>
+        <details>
+          <summary>创作者扶持计划包含哪些支持？</summary>
+          <p>包括选题库使用、拍摄清单、剪辑模板、基础设备借用与流量推荐。第三期已开放报名，面向持续记录女子足球的校园创作者。</p>
+        </details>
+        <details>
+          <summary>如何参与官方话题与创作挑战？</summary>
+          <p>关注站内专题页发布的话题标签，按话题要求上传作品即可参与。优秀作品将进入季度精选，并获得官方推荐位与线下观影交流邀请。</p>
+        </details>
+      </div>
+      <aside class="bws-contact">
+        <h2>与官方取得联系</h2>
+        <p>品牌合作、内容授权、媒体采访与球队档案申请，欢迎通过以下方式联系白袜女足编辑部。</p>
+        <dl>
+          <dt>官方邮箱</dt>
+          <dd>editor@baisocks.example</dd>
+          <dt>合作咨询</dt>
+          <dd>合作邮箱 partner@baisocks.example</dd>
+          <dt>办公地址</dt>
+          <dd>上海市杨浦区球场路 18 号白袜影像中心</dd>
+          <dt>工作时间</dt>
+          <dd>周一至周五 10:00 – 19:00</dd>
+        </dl>
+        <div class="bws-contact-btns">
+          <button class="bws-btn bws-btn-primary" type="button" data-bws-submit>提交投稿</button>
+          <button class="bws-btn bws-btn-ghost" type="button" data-bws-report>反馈问题</button>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 页脚 ============ -->
+<footer class="bws-footer">
+  <div class="bws-wrap">
+    <div class="bws-footer-grid">
+      <div class="bws-footer-brand">
+        <b>白袜女足 · Baisocks FC</b>
+        <p>白袜女足官方网站，专注女子足球原创影像与内容生态建设。以真实、专业、持续的记录，陪伴每一位球场上的女孩成长。</p>
+      </div>
+      <div>
+        <h4>内容</h4>
+        <ul>
+          <li><a href="#bws-focus">焦点影像</a></li>
+          <li><a href="#bws-topics">专题企划</a></li>
+          <li><a href="#bws-stream">内容社区</a></li>
+          <li><a href="#bws-extra">热度榜单</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>品牌</h4>
+        <ul>
+          <li><a href="#bws-about">品牌简介</a></li>
+          <li><a href="#bws-stories">品牌故事</a></li>
+          <li><a href="#bws-makers">创作者矩阵</a></li>
+          <li><a href="#bws-faq">帮助中心</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>官方信息</h4>
+        <ul>
+          <li>企业动态 · 每周更新</li>
+          <li>内容授权 · 正版署名</li>
+          <li>投稿报名 · 长期开放</li>
+          <li>社会责任 · 青训公益记录</li>
+        </ul>
+      </div>
+    </div>
+    <div class="bws-footer-bottom">
+      <span>© 2026 白袜女足官方网站 · 版权所有 · 持续运营中</span>
+      <span>沪ICP备 2026001888 号-1 · 沪公网安备 31011002026088 号</span>
+    </div>
+  </div>
+</footer>
+
+<!-- 通用弹窗 -->
+<div class="bws-modal-mask" id="bws-modal-mask">
+  <div class="bws-modal" role="dialog" aria-modal="true" aria-labelledby="bws-modal-title">
+    <button class="bws-modal-close" id="bws-modal-close" type="button" aria-label="关闭">×</button>
+    <h3 id="bws-modal-title">弹窗标题</h3>
+    <div id="bws-modal-body"></div>
+  </div>
+</div>
+
+<div class="bws-toast" id="bws-toast">已完成</div>
+<button class="bws-top" id="bws-top" type="button" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  "use strict";
+
+  var toast = document.getElementById('bws-toast');
+  var toastTimer = null;
+  function showToast(msg){
+    toast.textContent = msg;
+    toast.classList.add('is-show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toast.classList.remove('is-show'); }, 2200);
+  }
+
+  /* ---------- 移动端导航 ---------- */
+  var burger = document.getElementById('bws-burger');
+  var nav = document.getElementById('bws-nav');
+  if (burger && nav){
+    burger.addEventListener('click', function(){
+      nav.classList.toggle('is-open');
+    });
+    nav.addEventListener('click', function(e){
+      if (e.target.tagName === 'A') nav.classList.remove('is-open');
+    });
+  }
+
+  /* ---------- 搜索反馈 ---------- */
+  var searchInput = document.getElementById('bws-search-input');
+  var searchBtn = document.getElementById('bws-search-btn');
+  var searchFeedback = document.getElementById('bws-search-feedback');
+  var searchPool = [
+    '白袜之下 第12期','西安城墙下的女足球场','守门员入门教程','三双人气女足鞋横评',
+    '清晨五点半陪练日常','她脚下的城市 第二季','青训战术拆解','手机拍摄比赛幕后'
+  ];
+  function doSearch(){
+    var kw = (searchInput.value || '').trim();
+    if (!kw){
+      searchFeedback.style.display = 'block';
+      searchFeedback.textContent = '请输入球员、球队或专题关键词，例如「守门员」「西安」。';
+      return;
+    }
+    var hit = searchPool.filter(function(item){ return item.indexOf(kw) > -1; });
+    searchFeedback.style.display = 'block';
+    if (hit.length){
+      searchFeedback.innerHTML = '为「' + kw + '」找到 ' + hit.length + ' 条相关作品：' + hit.slice(0,3).join('、') + '。';
+    } else {
+      searchFeedback.textContent = '暂未收录「' + kw + '」相关作品，可尝试投稿或在帮助中心提交需求。';
+    }
+  }
+  if (searchBtn) searchBtn.addEventListener('click', doSearch);
+  if (searchInput){
+    searchInput.addEventListener('keydown', function(e){
+      if (e.key === 'Enter') doSearch();
+    });
+    searchInput.addEventListener('input', function(){
+      if (!searchInput.value) searchFeedback.style.display = 'none';
+    });
+  }
+  document.addEventListener('click', function(e){
+    if (searchFeedback && searchFeedback.style.display === 'block' &&
+        !e.target.closest('.bws-search')) searchFeedback.style.display = 'none';
+  });
+
+  /* ---------- 点赞 / 收藏 ---------- */
+  document.addEventListener('click', function(e){
+    var likeBtn = e.target.closest('[data-bws-like]');
+    if (likeBtn){
+      var label = likeBtn.querySelector('b');
+      var num = parseInt((label.textContent || '0').replace(/[^\d]/g,''), 10) || 0;
+      var on = likeBtn.classList.toggle('is-on');
+      num = on ? num + 1 : Math.max(0, num - 1);
+      label.textContent = num >= 1000 ? (num/1000).toFixed(1) + 'k' : num;
+      likeBtn.querySelector('span').textContent = on ? '♥' : '♡';
+      showToast(on ? '已点赞，谢谢你支持原创' : '已取消点赞');
+      return;
+    }
+    var favBtn = e.target.closest('[data-bws-fav]');
+    if (favBtn){
+      var favOn = favBtn.classList.toggle('is-fav');
+      favBtn.innerHTML = favOn ? '<span>★</span>已收藏' : '<span>☆</span>收藏';
+      showToast(favOn ? '已加入收藏，可在个人中心查看' : '已取消收藏');
+      return;
+    }
+  });
+
+  /* ---------- 弹窗基础 ---------- */
+  var mask = document.getElementById('bws-modal-mask');
+  var modalTitle = document.getElementById('bws-modal-title');
+  var modalBody = document.getElementById('bws-modal-body');
+  var modalClose = document.getElementById('bws-modal-close');
+  function openModal(title, html){
+    modalTitle.textContent = title;
+    modalBody.innerHTML = html;
+    mask.classList.add('is-open');
+  }
+  function closeModal(){ mask.classList.remove('is-open'); }
+  modalClose.addEventListener('click', closeModal);
+  mask.addEventListener('click', function(e){ if (e.target === mask) closeModal(); });
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape') closeModal(); });
+
+  /* ---------- 评论 ---------- */
+  function openComment(){
+    openModal('参与讨论',
+      '<p>留下你对这部作品的看法，优质评论会展示在作品页评论区。</p>' +
+      '<label for="bws-cmt">评论内容</label>' +
+      '<textarea id="bws-cmt" placeholder="例如：这段跟拍让我想起自己第一次上场的紧张。"></textarea>' +
+      '<div style="margin-top:16px;text-align:right"><button class="bws-btn bws-btn-primary" type="button" id="bws-cmt-send">发布评论</button></div>');
+    document.getElementById('bws-cmt-send').addEventListener('click', function(){
+      var val = document.getElementById('bws-cmt').value.trim();
+      if (!val){ showToast('评论内容不能为空'); return; }
+      closeModal();
+      showToast('评论已提交，审核后展示');
+    });
+  }
+
+  /* ---------- 分享 / 复制链接 ---------- */
+  function copyText(text){
+    if (navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(function(){
+        showToast('链接已复制，可分享给队友');
+      }).catch(function(){
+        showToast('复制失败，请手动选择链接');
+      });
+    } else {
+      showToast('当前环境不支持自动复制，请手动选择链接');
+    }
+  }
+  function openShare(){
+    openModal('分享这部作品',
+      '<p>选择分享方式，把白袜女足的原创影像推荐给更多球友。</p>' +
+      '<div style="display:flex;gap:10px;flex-wrap:wrap;margin:14px 0">' +
+        '<button class="bws-btn bws-btn-ghost" style="color:#1a7f5a;border-color:#cfe5da" type="button" data-bws-share-to="微信">微信</button>' +
+        '<button class="bws-btn bws-btn-ghost" style="color:#1a7f5a;border-color:#cfe5da" type="button" data-bws-share-to="微博">微博</button>' +
+        '<button class="bws-btn bws-btn-ghost" style="color:#1a7f5a;border-color:#cfe5da" type="button" data-bws-share-to="QQ">QQ</button>' +
+      '</div>' +
+      '<button class="bws-btn bws-btn-primary" type="button" id="bws-copy-link">复制作品链接</button>');
+    document.getElementById('bws-copy-link').addEventListener('click', function(){
+      copyText('白袜女足 · 原创影像作品 —— 分享自白袜女足官方网站');
+    });
+    var tos = modalBody.querySelectorAll('[data-bws-share-to]');
+    for (var i=0;i<tos.length;i++){
+      tos[i].addEventListener('click', function(){
+        showToast('已唤起' + this.getAttribute('data-bws-share-to') + '分享面板');
+        closeModal();
+      });
+    }
+  }
+
+  /* ---------- 作者名片 ---------- */
+  function openAuthor(name){
+    var data = {
+      '林野守门日志': '退役门将，青训守门员教练。擅长把扑救动作拆成可练习的小步骤，作品以教程与训练日志为主，累计发布 86 部原创影像。',
+      '阿桦装备笔记': '独立装备测评作者，坚持自费购买与长期实测。内容覆盖球鞋、护腿板与训练辅助装备，重视真实场景下的使用反馈。',
+      '小陶拍球场': '自由摄影师，十年走访西北城市女子足球场地。作品以城市探索与业余联赛为主，强调人物叙事而非比分结果。',
+      '顾妈妈手记': '青训球员家长，记录陪练、接送与家庭支持的日常。镜头朴素温暖，希望让更多人看见校园女足背后的家庭力量。'
+    };
+    openModal(name,
+      '<p>' + (data[name] || '白袜女足社区创作者，持续记录球场上的真实故事。') + '</p>' +
+      '<p style="font-size:13px;color:#6d7f76">擅长领域与作品数据可在创作者主页查看，欢迎关注与交流。</p>' +
+      '<div style="text-align:right"><button class="bws-btn bws-btn-primary" type="button" id="bws-follow">关注创作者</button></div>');
+    document.getElementById('bws-follow').addEventListener('click', function(){
+      closeModal();
+      showToast('已关注，更新时会收到提醒');
+    });
+  }
+
+  /* ---------- 投稿 ---------- */
+  function openSubmit(){
+    openModal('投稿我的球场故事',
+      '<p>填写作品基本信息，编辑部将在五个工作日内回复。手机拍摄同样欢迎。</p>' +
+      '<label for="bws-sub-title">作品标题</label>' +
+      '<input id="bws-sub-title" type="text" placeholder="例如：我们球队的第一次夜场训练">' +
+      '<label for="bws-sub-city">拍摄城市</label>' +
+      '<input id="bws-sub-city" type="text" placeholder="例如：成都">' +
+      '<label for="bws-sub-desc">内容简介</label>' +
+      '<textarea id="bws-sub-desc" placeholder="简单描述拍摄对象、场景与你想表达的内容"></textarea>' +
+      '<div style="margin-top:16px;text-align:right"><button class="bws-btn bws-btn-primary" type="button" id="bws-sub-send">提交投稿</button></div>');
+    document.getElementById('bws-sub-send').addEventListener('click', function(){
+      var t = document.getElementById('bws-sub-title').value.trim();
+      if (!t){ showToast('请填写作品标题'); return; }
+      closeModal();
+      showToast('投稿已提交，编辑部会尽快联系你');
+    });
+  }
+
+  /* ---------- 反馈 ---------- */
+  function openReport(){
+    openModal('反馈问题',
+      '<p>遇到内容错误、版权疑问或使用问题，请在这里告诉我们。</p>' +
+      '<label for="bws-rep">问题描述</label>' +
+      '<textarea id="bws-rep" placeholder="请描述你遇到的问题，便于我们定位处理"></textarea>' +
+      '<div style="margin-top:16px;text-align:right"><button class="bws-btn bws-btn-primary" type="button" id="bws-rep-send">提交反馈</button></div>');
+    document.getElementById('bws-rep-send').addEventListener('click', function(){
+      var v = document.getElementById('bws-rep').value.trim();
+      if (!v){ showToast('请填写问题描述'); return; }
+      closeModal();
+      showToast('反馈已收到，感谢你的帮助');
+    });
+  }
+
+  /* ---------- 事件委托绑定按钮 ---------- */
+  document.addEventListener('click', function(e){
+    if (e.target.closest('[data-bws-comment]')){ openComment(); return; }
+    if (e.target.closest('[data-bws-share]')){ openShare(); return; }
+    var authorBtn = e.target.closest('[data-bws-author]');
+    if (authorBtn){ openAuthor(authorBtn.getAttribute('data-bws-author')); return; }
+    if (e.target.closest('[data-bws-submit]')){ openSubmit(); return; }
+    if (e.target.closest('[data-bws-report]')){ openReport(); return; }
+  });
+
+  /* ---------- 标签筛选 ---------- */
+  var filterBox = document.getElementById('bws-filter');
+  var streamGrid = document.getElementById('bws-stream-grid');
+  var emptyBox = document.getElementById('bws-empty');
+  if (filterBox && streamGrid){
+    filterBox.addEventListener('click', function(e){
+      var chip = e.target.closest('[data-bws-filter]');
+      if (!chip) return;
+      var all = filterBox.querySelectorAll('.bws-chip');
+      for (var i=0;i<all.length;i++) all[i].classList.remove('is-active');
+      chip.classList.add('is-active');
+      var cat = chip.getAttribute('data-bws-filter');
+      var cards = streamGrid.querySelectorAll('[data-bws-cat]');
+      var shown = 0;
+      for (var j=0;j<cards.length;j++){
+        var ok = cat === 'all' || cards[j].getAttribute('data-bws-cat') === cat;
+        cards[j].style.display = ok ? '' : 'none';
+        if (ok) shown++;
+      }
+      emptyBox.style.display = shown ? 'none' : 'block';
+    });
+  }
+
+  /* ---------- 数字滚动 ---------- */
+  var counted = false;
+  function runCount(){
+    var nodes = document.querySelectorAll('[data-bws-count]');
+    if (!nodes.length || counted) return;
+    counted = true;
+    for (var i=0;i<nodes.length;i++){
+      (function(node){
+        var target = parseInt(node.getAttribute('data-bws-count'),10) || 0;
+        var cur = 0;
+        var step = Math.max(1, Math.round(target / 60));
+        var timer = setInterval(function(){
+          cur += step;
+          if (cur >= target){ cur = target; clearInterval(timer); }
+          node.textContent = cur.toLocaleString('en-US');
+        }, 26);
+      })(nodes[i]);
+    }
+  }
+  if ('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if (en.isIntersecting) runCount(); });
+    }, {threshold:.3});
+    var heroStats = document.querySelector('.bws-hero-stats');
+    if (heroStats) io.observe(heroStats);
+  } else {
+    runCount();
+  }
+
+  /* ---------- 回到顶部 ---------- */
+  var topBtn = document.getElementById('bws-top');
+  window.addEventListener('scroll', function(){
+    if (window.scrollY > 520) topBtn.classList.add('is-show');
+    else topBtn.classList.remove('is-show');
+  });
+  topBtn.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+})();
+</script>
+</body>
+              </html>
